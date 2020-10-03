@@ -1,6 +1,6 @@
 import java.text.NumberFormat;
 
-public class Product {
+public abstract class Product {
 
     private String code;
     private String description;
@@ -43,6 +43,8 @@ public class Product {
     public String toString() {
         return description;
     }
+    
+    public abstract String getDisplayText();
 
     public static int getCount() {
         return count;

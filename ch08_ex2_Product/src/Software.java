@@ -20,4 +20,9 @@ public class Software extends Product {
     public String toString() {
         return super.toString() + " " + version;
     }
+    
+    @Override
+    public String getDisplayText() {
+    	return toString();
+    }
 }

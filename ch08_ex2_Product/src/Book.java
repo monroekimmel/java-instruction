@@ -1,4 +1,4 @@
-public class Book extends Product {
+public final class Book extends Product {
 
     private String author;
 
@@ -19,5 +19,10 @@ public class Book extends Product {
     @Override
     public String toString() {
         return super.toString() + " by " + author;
+    }
+    
+    @Override
+    public String getDisplayText() {
+    	return toString();
     }
 }
