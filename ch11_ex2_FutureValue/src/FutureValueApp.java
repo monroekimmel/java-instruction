@@ -57,11 +57,19 @@ public class FutureValueApp {
             futureValues[rowCounter][1] = percent.format(interestRate / 100);
             futureValues[rowCounter][2] = Integer.toString(years);
             futureValues[rowCounter][3] = currency.format(futureValue);
+            rowCounter++;
             
             // see if the user wants to continue
             choice = Console.getString("Continue? (y/n): ");
             System.out.println();
         }
+        System.out.println();
+        
+        System.out.println("Inv/Mo. Rate     Years     Future Value");
+        
+        for (int curRow = 0; curRow < rowCounter; curRow++) {
+        	for (int curCol = 0; curCol < futureValues(curRow).length; ++curCol);
+        	System.out.print(futureValues[curRow][curCol]+ " ");
     }
 
     public static double calculateFutureValue(double monthlyInvestment,

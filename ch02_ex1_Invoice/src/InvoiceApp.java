@@ -1,6 +1,18 @@
 import java.util.Scanner;
 
 public class InvoiceApp {
+	
+	private static double findDiscountPercent(double subtotal) {
+		double discountPercent;
+		if (subtotal >= 200) {
+			discountPercent = .2;
+		} else if (subtotal >= 100) {
+			discountPercent = .1;
+		} else {
+			discountPercent = 0.0;
+		}
+		return discountPercent;
+	}
 
     public static void main(String[] args) {
         // welcome the user to the program
@@ -15,17 +27,12 @@ public class InvoiceApp {
         String choice = "y";
         while (choice.equalsIgnoreCase("y")) {
             // get the invoice subtotal from the user
-            System.out.print("Enter subtotal:   "); 
+            System.out.print("Enter subtotal:   ");
+            double subtotal = sc.nextDouble();
 
             // calculate the discount amount and total
-            double discountPercent;
-			if (subtotal >= 200) {
-                discountPercent = .2;
-            } else if (subtotal >= 100) {
-                discountPercent = .1;
-            } else {
-                discountPercent = 0.0;
-            }
+            double discountPercent = 0;
+          
             double discountAmount = subtotal * discountPercent;
             double total = subtotal - discountAmount;
 

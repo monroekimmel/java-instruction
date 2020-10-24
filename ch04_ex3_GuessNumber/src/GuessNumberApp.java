@@ -15,12 +15,11 @@ public class GuessNumberApp {
         number++;                         // int is >= 1 and <= limit
 
         @SuppressWarnings("resource")
-		Scanner sc = new Scanner(System.in); 
-        int guess = sc.nextInt();
+        Scanner sc = new Scanner(System.in);            
         int count = 1;
         while (true) {
             System.out.print("Your guess: ");
-            //move scanner statement above while loop
+            int guess = sc.nextInt();
             
             if (guess < 1 || guess > LIMIT) {
                 System.out.println("Invalid guess. Try again.");
@@ -38,7 +37,6 @@ public class GuessNumberApp {
             }            
             count++;
         }
-
         System.out.println("Bye!");
     }   
 }
