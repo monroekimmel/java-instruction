@@ -4,11 +4,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import kimmel.business.Grade;
+
 class GradeTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testLetterGradeA() {
+		Grade gradeA = new Grade(88);
+		
+		assertEquals("A", gradeA.getLetter());
 	}
 
 }

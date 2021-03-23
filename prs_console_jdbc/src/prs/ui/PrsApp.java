@@ -57,7 +57,7 @@ public class PrsApp {
 		VendorDB vendorDB = new VendorDB();
 		List<vendor> vendors = vendorDB.getAll();
 		
-		for (Vendor vendor : vendors) {
+		for (vendor vendor : vendor) {
 			System.out.println(vendor);
 		}
 		System.out.println();

@@ -7,6 +7,7 @@ public class InvoiceApp {
         System.out.println("Welcome to the Invoice Total Calculator");
         System.out.println();  // print a blank line
 
+        
         // create a Scanner object named sc
         @SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);

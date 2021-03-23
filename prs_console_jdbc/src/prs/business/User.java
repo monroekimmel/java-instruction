@@ -11,8 +11,8 @@ public class User {
 	private boolean isReviewer;
 	private boolean isAdmin;
 	
-	public user() {
-		this(0, "", "", "", "", "", "", false, false)
+	public User() {
+		this(0, "", "", "", "", "", "", false, false);
 	}
 
 	public User(int id, String userName, String password, String firstName, String lastName, String phoneNumber,
