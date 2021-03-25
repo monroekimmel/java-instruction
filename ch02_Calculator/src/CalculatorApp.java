@@ -4,6 +4,7 @@ public class CalculatorApp {
 	public static void main(String[] args) {
 		System.out.println("Welcome to my calculator!");
 		
+		
 		int n1 = 5;
 		int n2 = 7;
 		double d1 = 14.3;
