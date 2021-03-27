@@ -13,12 +13,15 @@ public class CalculatorApp {
 		
 		System.out.println("n1 + n2 ="+(n1+n2));
 		
+		
 		int diff = n2 - n1;
 		System.out.println("diff = "+diff);
+		
 		
 		double diff2;
 		diff2 = d2 - n2;
 		System.out.println("diff2 = "+diff2);
+		
 		
 		// example of casting
 		int product = (int)(n2 * d2);

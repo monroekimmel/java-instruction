@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class InvoiceApp {
 	
+	
 	private static double findDiscountPercent(double subtotal) {
 		double discountPercent;
 		if (subtotal >= 200) {
