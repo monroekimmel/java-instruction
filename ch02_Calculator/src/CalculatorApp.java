@@ -23,7 +23,6 @@ public class CalculatorApp {
 		System.out.println("diff2 = "+diff2);
 		
 		
-		// example of casting
 		int product = (int)(n2 * d2);
 		System.out.println("product ="+product);
 		
