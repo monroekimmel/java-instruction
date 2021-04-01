@@ -5,6 +5,7 @@ public class ch02_GradeConverter {
 	public static void main(String[] args) {
 		//welcome message
 		//RIGHT CLICK SCANNER
+		
 		System.out.println("Welcome to the letter grade converter!");
 		Scanner sc = new Scanner(System.in);
 				
@@ -13,6 +14,7 @@ public class ch02_GradeConverter {
 		//while loop - loop while 'choice' == 'y'
 		//note else if statement
 		//basing off of lower bounds of grades
+		
 		String choice = "y";
 		while (choice.equalsIgnoreCase("y")) {
 			
@@ -41,6 +43,7 @@ public class ch02_GradeConverter {
 		}
 
 		//goodbye message
+		
 		System.out.println("Goodbye!");
 	}
 
