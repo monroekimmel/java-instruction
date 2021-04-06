@@ -31,11 +31,13 @@ public class StringApp {
 		System.out.println("You entered: "+name);
 		
 		//get numbers from the user
+		
 		System.out.println("Enter a whole number: ");
 		int i = sc.nextInt();
 		System.out.println("You entered: "+i);
 		
 		//use relational operators
+		
 		if (i > 10) {
 			System.out.println("i is greater than 10!");
 		}
