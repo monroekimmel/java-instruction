@@ -6,7 +6,6 @@ public class MPGApp {
     public static void main(String[] args) {
         System.out.println("Welcome to the Miles Per Gallon calculator");
         System.out.println();  
-        // print a blank line
 
         @SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
