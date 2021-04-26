@@ -13,7 +13,6 @@ public class InterestCalculatorApp {
 		String choice = "y";
 		while (choice.equalsIgnoreCase("y")) {
 			
-			//do the stuffs
 			
 		System.out.print("Enter loan amount: ");
 		BigDecimal loanAmount = sc.nextBigDecimal();
@@ -21,12 +20,10 @@ public class InterestCalculatorApp {
 		System.out.print("Enter interest rate: ");
 		BigDecimal interestRate = sc.nextBigDecimal();
 		
-		//now for the maths
 		
 		BigDecimal interest = loanAmount.multiply(interestRate);
 		interest.setScale(2, RoundingMode.HALF_UP);
 		
-		//display results
 		
 		NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance();
 		NumberFormat percentFormatter = NumberFormat.getPercentInstance();
@@ -43,7 +40,6 @@ public class InterestCalculatorApp {
 		
 		System.out.println(outputMessage);
 		
-		//prompt to continue
 		
 		System.out.print("Continue? (y/n)");
 		choice = sc.next();
