@@ -9,7 +9,6 @@ public class GuessNumberApp {
         System.out.println("I'm thinking of a number from 1 to " + LIMIT);
         System.out.println();
 
-        // get a random number between 1 and the limit
         double d = Math.random() * LIMIT; // d is >= 0.0 and < limit
         int number = (int) d;             // convert double to int
         number++;                         // int is >= 1 and <= limit
